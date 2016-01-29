@@ -1,0 +1,333 @@
+/* FONTS PALO SECO */
+@font-face {
+    font-family: 'paloseco';
+    src: url('../fonts/anonymous-webfont.eot');
+    src: url('../fonts/anonymous-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/anonymous-webfont.woff2') format('woff2'),
+         url('../fonts/anonymous-webfont.woff') format('woff'),
+         url('../fonts/anonymous-webfont.ttf') format('truetype'),
+         url('../fonts/anonymous-webfont.svg#anonymousregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* FONTS CON SERIFA */
+@font-face {
+    font-family: 'serif';
+    src: url('../fonts/artifika-regular-webfont.eot');
+    src: url('../fonts/artifika-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/artifika-regular-webfont.woff2') format('woff2'),
+         url('../fonts/artifika-regular-webfont.woff') format('woff'),
+         url('../fonts/artifika-regular-webfont.ttf') format('truetype'),
+         url('../fonts/artifika-regular-webfont.svg#artifikamedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+  text-decoration:none;
+}
+
+
+.header{
+	display:flex;
+	justify-content:space-between;
+    height:58px;
+}
+
+   .header-figure{
+ 	  margin:0;
+ 	  padding:0;
+    }
+
+
+	    .header-figure img{
+	 	  width:220px;
+	 	  min-height:58px;
+	    }
+
+    .header-nav{
+    	flex-grow:3;
+    	background:#2654A2;
+    	height:58px;
+    }
+
+	.nav-list{
+      list-style:none;
+      margin-top:0;
+	}
+
+
+	   .nav-list li{
+	   	   display:inline-block;
+	   	   margin-left:20px;
+	   	   font-family:"paloseco";
+	   	   font-size:1em;
+	   	   font-weight:bold;
+         line-height:54px;
+	   }
+
+     .nav-list li a{
+       text-decoration:none;
+       color:white;
+     }
+
+       .nav-list li:hover{
+        border-top:4px solid white;
+         box-sizing:border-box;
+       }
+
+    .nav-pais{
+       border-radius:20px;
+       margin-top:12px;
+    }
+
+    .comboPais{
+       color:#273b47;
+       padding:0 3px;
+    }
+
+
+
+.section--slider{
+    background:#2654A2;
+}
+
+
+          .slider li img{
+             height:400px;
+          }
+
+          .slider--article{
+             height:300px;
+          }
+
+          .slider--article{
+             height:250px;
+             position:relative;
+             margin:0  20px;
+             padding:30px 0;
+          }
+
+          .slider-article--title{
+            color:white;
+            font-family:"paloseco";
+            font-weight:bold;
+            margin-left:65px;
+          }
+
+          .slider--article-content {
+            color:blue;
+            font-family:"serif";
+            text-align: justify;
+            color:white;
+            width:650px;
+            margin-left:5%;
+            line-height:25px;
+          }
+
+          .slider--figure{
+            position:absolute;
+            right:0;
+            margin-right:200px;
+            top:55px;
+            transform: skew(-8deg,2deg);
+          }
+
+          .slider--figure img{
+              width:260px;
+              height:170px;
+          }
+
+          .btn-read{
+            margin-left:64px;
+          }
+
+          .btn-read input{
+             color:#0D0CE5;
+             padding:7px 22px;
+             border-bottom:5px solid #AAA;
+          }
+
+
+.section--service{
+    background:#EFF0EB;
+    padding:20px 0;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+     .section--servive-header{
+        width:400px;
+        margin:auto;
+     } 
+
+     .section--servive-header h2{
+        margin:0px;
+        padding:0px;
+        color:#5952DB;
+        font-family:"paloseco";
+        font-size:1.2em;
+        text-align:center;
+        font-weight:bold;
+     }
+
+     .section--service-figure{
+        display:inline-block;
+        transform: skew(-13deg,1deg);
+        margin-top:30px;
+        margin-left:55px;
+     }
+
+     .section--service-figure img{
+        width:200px;
+        height:170px;
+     }
+
+     .btn-service input{
+        margin-left:500px;
+     }
+
+
+.service-worflow{
+    background:white;
+}
+
+
+   .service--worflow-header {
+      padding:10px 0;
+   }
+   .service--worflow-header h3{
+      color:#5952DB;
+      text-align:center;
+      font-size:1.7em;
+   }
+
+   .service--worflow-figure img{
+       width:270px;
+       height:150px;
+   }
+
+   .service--worflow-article{
+     margin-left:10%;
+   }
+
+
+   .service--worflow-figure{
+      display:inline-block;
+   }
+
+   .figure-main{
+      margin-left:10%;
+   }
+
+      .figure-main img{
+         height:250px;
+         width:360px;
+      }
+
+
+
+  .section--nosotros{
+    color:blue;
+    margin:10px 20%;
+    font-family:"serif";
+    font-weight:normal;
+    line-height:30px;
+    text-align:justify;  
+  }
+
+    .section--nosotros:first-letter{
+      font-size:30px;
+      font-style:italic;
+    }
+
+    .section--nosotros-figure{
+       text-align:center;
+    }
+
+       .section--nosotros-figure img{
+          border-radius:20px;
+          box-shadow:8px 8px 8px #AAA;
+       }
+
+
+
+
+
+
+
+
+
+.footer{
+    background:#2654A2;
+    display:flex;
+    padding:10px 0;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+  .footer p {
+     color:white;
+     font-family:"paloseco";
+     font-size:0.9em;
+  }
+
+
+  .footer-ubication{
+    width:530px;
+  }
+
+
+/*ESTILOS ANGULAR */
+
+.pais-ES,.pais-EN{
+  border-radius:20px;
+}
+
+.option-ES,.option-EN{
+   color:#273b47;
+}
+
+
+
+/*EVENTOS JS*/
+.submenu{
+   position:relative;
+   border:4px solid red;
+   padding:20px 0;
+   display:none;
+}
+
+.lista1{
+  display:none;
+  list-style:none;
+}
+
+.lista2{
+   display:none;
+  list-style:none;
+}
+
+ .lista1 li{
+   display:inline-block;
+   margin-left:60px;
+ }
+
+ .lista2 li{
+   display:inline-block;
+   margin-left:60px;
+ }
+
+
+
+
+
+
+
+
+
+

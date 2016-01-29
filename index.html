@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html ng-app="services">
+<head>
+	<meta charset="UTF-8">
+	<title>GLOBAL MONTAJE-SERVCIOS S.A.C</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styleSlide.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <div ng-controller="servicesController as serCtrl">
+    
+	<header class="header">
+		<figure class="header-figure">
+			<img src="img/logo.png" alt="">
+		</figure>
+ 
+        <nav class="header-nav">
+        	<ul id="menu" class="nav-list">
+        		<li><a href="#" ng-click="serCtrl.selectedTab(1)">Inicio</a></li>
+        		<li><a href="#" ng-click="serCtrl.selectedTab(2)">Nosotros</a></li>
+        		<li><a href="#" id="servicios" ng-click="serCtrl.selectedTab(3)">Servicios</a>
+            </li>
+        		<li><a href="#" id="publicaciones" ng-click="serCtrl.selectedTab(4)">Publicaciones </a></li>
+        		<li><a href="#" ng-click="serCtrl.selectedTab(5)">Contactanos</a></li>
+                <li><a href="#">Webmail</li>
+                <li>
+                    <img  class="pais-{{seleccionado}}" ng-src="img/{{seleccionado}}.jpg"/>
+                    <select id="pais" name="seleccionado"  ng-model="seleccionado">
+                                <option class="option-ES" value="" disabled>Pais</option>
+                                <option  class="option-{{seleccionado}}" value="ES">ES</option>
+                                <option class="option-{{seleccionado}}" value="EN">EN</option>
+                    </select>
+                </li>
+        	</ul>
+        </nav>
+	</header>
+  
+  <ul class="lista1" id="lista1">
+                 <li>item</li>
+                 <li>item</li>
+                 <li>item</li>
+  </ul>
+   <ul class="lista2" id="lista2">
+                 <li>item2</li>
+                 <li>item2</li>
+                 <li>item2</li>
+  </ul>
+
+<div ng-show="serCtrl.tab === 1">
+
+     <div class="submenu" id="submenu">
+     </div>
+
+	<section class="section--slider">
+	  	 <ul class="rslides slider">
+			  <li><img src="img/img1.jpg"  alt=""></li>
+			  <li><img src="img/img2.jpg"  alt=""></li>
+			  <li><img src="img/img5.jpg"  alt=""></li>
+        </ul>
+        <article class="slider--article">
+        	<p class="slider-article--title">NOSOTROS</p>
+        	<p class="slider--article-content">
+        	   Somos una empresa más de 20 años de experiencia,dedicada a la prestación de servicios de contrucción
+        	   y mantenimiento de Plantas y Ductos de Hidrocarburos, tanques de almacenamiento, recipientes y estructuras metalicas.
+        	   Obras Civiles vinculadas a la industria petrolera, especializandonos en la ejecución de proyectos en el Sector industrial,
+        	   brindamos servicios de ingeniería, metalmecanica, con capacidad de dar solución a problemas de alta 
+        	</p>
+        	<p class="btn-read">
+        		<input  type="button" value="Leer mas">
+        	</p>
+        	<figure class="slider--figure">
+        		<img src="img/img5.jpg" alt="">
+        	</figure>
+        </article>
+	</section>
+
+
+	<section class="section--service">
+		<header class="section--servive-header">
+		   <h2>SERVICIOS</h2>	
+		</header>
+		<article class="section--service-article">
+			<figure class="section--service-figure">
+				<img src="img/img6.jpg" alt="">
+				<p></p>
+			</figure>
+			<figure  class="section--service-figure">
+				<img src="img/img7.jpg" alt="">
+				<p></p>
+			</figure>
+			<figure class="section--service-figure">
+				<img src="img/img8.jpg" alt="">
+				<p></p>
+			</figure>
+			<figure class="section--service-figure">
+				<img src="img/img9.jpg" alt="">
+				<p></p>
+			</figure>
+		</article>
+		<p class="btn-read btn-service">
+        	<input  type="button" value="Leer mas">
+        </p>
+	</section>
+ 
+    <section class="service-worflow">
+        <header class="service--worflow-header">
+        	<h3>TRABAJOS REALIZADOS</h3>
+        </header>
+        
+        <article class="service--worflow-article">
+          <figure class="service--worflow-figure figure-main">
+        		<img src="img/img4.jpg" alt="">
+        	</figure>
+        	<figure  class="service--worflow-figure figure-main">
+        		<img src="img/img5.jpg" alt="">
+        	</figure>	
+            <figure  class="service--worflow-figure">
+            	<img src="img/img6.jpg" alt="">
+            </figure>
+           	<figure  class="service--worflow-figure">
+           		<img src="img/img7.jpg" alt="">
+           	</figure>
+           	<figure  class="service--worflow-figure">
+           		<img src="img/img8.jpg" alt="">
+           	</figure>	
+        </article>
+    </section>
+  </div>
+
+
+  <div  ng-show="serCtrl.tab === 2" class="nosotros-content">
+       <figure class="section--nosotros-figure">
+           <img src="img/logo.png" alt="">
+       </figure>
+       <p class="section--nosotros">
+        En el año 1993,  gracias a su iniciativa, esfuerzo y empeño, el  Sr. César Campoverde Cortéz, decidió trabajar por su propia cuenta haciendo trabajos de soldadura, limpieza mecánica y pequeños trabajos relacionados con la industria petrolera, haciéndose conocido entre las pequeñas empresas de la localidad de Talara.
+        Transcurridos cinco años de esfuerzos, decide constituirse en una pequeña empresa denominada “Campoverde Contratistas Generales S.R.L.”, uniéndose en sociedad con sus dos hermanos: Franklin y Rubén.
+        A partir del año 1998 la Empresa empieza su crecimiento como tal al hacerse cargo del mantenimiento de tanques y líneas de petróleo otorgado por Graña y Montero Petrolera, en el Consorcio Terminales, destinado en las áreas de Puerto Eten, Salaverry, Chimbote y Puerto Supe. También este crecimiento se extendió hasta el vecino país de Bolivia, donde realizamos hasta la fecha el Mantenimiento de Plantas y Ductos de hidrocarburos; así como la ejecución de proyectos de gran envergadura en el mismo rubro, para las empresas Compañía Logística de Hidrocarburos de Bolivia (CLHB) y Yacimientos Petroleros Fiscales de Bolivia (YPFB).
+        Con los cambios de gobiernos en nuestro país se fueron dictando nuevas leyes y medidas, que afectaron a las pequeñas empresas,  haciendo que muchas de ellas se transformen o desaparecieran; nuestra empresa no ajena a estos cambios, para continuar trabajando y por acuerdo de sus accionistas, tuvo que cambiar de razón social a fin de seguir brindando el mismo servicio en el ramo petrolero.
+        Es así como se crea “Global Montaje y Servicios S.A.C” para continuar con las labores solicitadas por las Empresas Petroleras que nos han brindado la confianza y oportunidad para demostrar la calidad de nuestros servicios.
+       </p>
+  </div>
+
+
+  <div ng-show="serCtrl.tab === 3">
+    <h1>SERVICIOS</h1>
+  </div>
+
+  <div ng-show="serCtrl.tab === 4">
+      <h1>PULBLICACIONES</h1>
+  </div>
+
+  <div ng-show="serCtrl.tab === 5">
+      <h1>CONTACTANOS</h1> 
+  </div>
+
+  <div ng-show="serCtrl.tab === 6">
+      <h1>WEBMAILS</h1>
+  </div>
+
+
+<footer class="footer">
+        	<p>Copyright-2016</p>
+        	<p class="footer-ubication">
+        		Zona industrial S/N Talara Alta Frente a la Villa Petrex,
+        		 <strong>Telefonos:</strong> 044-206199/Nextel 413*9360
+        		073-385007/Nextel 838*6324
+        		Talara - Piura, peru. 
+        	</p>
+</footer>
+
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/script.js"></script>
+	  <script src="js/scriptSlide.js"></script>
+	  <script src="js/helpers.js"></script>
+    <script>
+        $(function() {
+          $(".rslides").responsiveSlides();
+        });
+        inicio();  
+   </script>
+</body>
+</html>
